@@ -50,11 +50,12 @@ conda create -n vehiclebot python=3.10 -y
 conda activate vehiclebot
 ````
 Install all libraries and dependencies
-````
+``` bash
 pip install -r requirements.txt
 
+
 Run the flask App
-````
+``` bash
 app.py file
 
 
