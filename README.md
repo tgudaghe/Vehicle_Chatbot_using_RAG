@@ -13,16 +13,17 @@ This project implements a **Vehicle Chatbot** that leverages **Retrieval-Augment
 ## 🧠 Key Components
 
 - **Document Ingestion:** Upload and parse PDF, text, or HTML-based vehicle manuals.
-- **Embedding & Indexing:** Use embedding models to vectorize chunks and store in a vector database (e.g., FAISS or ChromaDB).
+- **Embedding & Indexing:** Use embedding models to vectorize chunks and store in a vector database (e.g., Pinecone).
 - **Retrieval:** Find relevant document chunks based on user queries.
 - **Generation:** Use an LLM (e.g., OpenAI GPT, HuggingFace) to answer based on retrieved content.
 
 ## 🔧 Tech Stack
 
 - **LangChain** for RAG framework
-- **OpenAI / HuggingFace** for LLMs
-- **FAISS / Chroma** for vector search
-- **Streamlit** (optional) for UI
+- **Huggingface** for embedding
+- **OpenAI** for LLMs
+- **Pinecone** for vector search
+- **Flask** (optional) for UI
 - **PyMuPDF / pdfminer / BeautifulSoup** for document parsing
 
 ## 📊 Data Sources
@@ -47,6 +48,8 @@ conda create -n vehiclebot python=3.10 -y
 # activate conda environment
 
 conda activate vehiclebot
+````
+Install all libraries and dependencies
 ````
 pip install -r requirements.txt
 
